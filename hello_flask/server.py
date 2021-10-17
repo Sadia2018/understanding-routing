@@ -8,6 +8,10 @@ def hello_world():
 @app.route('/success')
 def success():
   return "success"
+
+@app.route('/repeat/<int:num>/<string:word>')
+def repeat_word(num, word):
+    output = ''
    
 
 
